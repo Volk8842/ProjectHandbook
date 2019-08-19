@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:ProjectHandbook.Views;assembly=ProjectHandbook"
+             x:Class="ProjectHandbook.Views.UnitView">
+  <ContentView.Content>
+      <Frame
+          Padding="2"
+          BackgroundColor="OrangeRed"
+          CornerRadius="0">
+          <Grid RowSpacing="0">
+              <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition />
+              </Grid.RowDefinitions>
+              <Frame
+                  Grid.Row="0"
+                  BackgroundColor="Black"
+                  CornerRadius="0"
+                  HasShadow="False">
+                  <Label
+                      FontAttributes="Bold"
+                      FontSize="Large"
+                      HorizontalTextAlignment="Center"
+                      Text="IMMORTAL"
+                      TextColor="White" />
+              </Frame>
+              <views:UnitStatsView Grid.Row="1" />
+              <Frame
+                  Grid.Row="2"
+                  Margin="0"
+                  Padding="1"
+                  BackgroundColor="Black"
+                  HasShadow="False" />
+              <Frame
+                  Grid.Row="3"
+                  BackgroundColor="White"
+                  HasShadow="False" />
+              <Frame
+                  Grid.Row="4"
+                  Margin="0"
+                  Padding="1"
+                  BackgroundColor="Black"
+                  HasShadow="False" />
+              <Frame
+                  Grid.Row="3"
+                  BackgroundColor="White"
+                  HasShadow="False" />
+          </Grid>
+      </Frame>
+  </ContentView.Content>
+</ContentView>

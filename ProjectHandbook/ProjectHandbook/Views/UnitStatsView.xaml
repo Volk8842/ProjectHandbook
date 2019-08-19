@@ -1,0 +1,222 @@
+﻿<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ProjectHandbook.Views.UnitStatsView">
+    <ContentView.Content>
+        <Grid Margin="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="10"
+                Padding="0"
+                BackgroundColor="OrangeRed"
+                CornerRadius="0"
+                HasShadow="False" />
+            <Frame
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="10"
+                Padding="0"
+                BackgroundColor="White"
+                CornerRadius="0"
+                HasShadow="False" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="M"
+                TextColor="Black" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="WS"
+                TextColor="Black" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="2"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="BS"
+                TextColor="Black" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="3"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="S"
+                TextColor="Black" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="4"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="T"
+                TextColor="Black" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="5"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="W"
+                TextColor="Black" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="6"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="A"
+                TextColor="Black" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="7"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="Ld"
+                TextColor="Black" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="8"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="Sv"
+                TextColor="Black" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="9"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="Mx"
+                TextColor="Black" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="5''"
+                TextColor="Black" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="3+"
+                TextColor="Black" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="2"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="3+"
+                TextColor="Black" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="3"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="4"
+                TextColor="Black" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="4"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="4"
+                TextColor="Black" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="5"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="1"
+                TextColor="Black" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="6"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="1"
+                TextColor="Black" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="7"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="10"
+                TextColor="Black" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="8"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="3+"
+                TextColor="Black" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="9"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="-"
+                TextColor="Black" />
+
+        </Grid>
+    </ContentView.Content>
+</ContentView>
