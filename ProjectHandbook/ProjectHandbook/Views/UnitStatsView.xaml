@@ -1,14 +1,15 @@
 ﻿<ContentView
+    x:Class="ProjectHandbook.Views.UnitStatsView"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="ProjectHandbook.Views.UnitStatsView">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentView.Content>
         <Grid Margin="0" RowSpacing="0">
             <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
+                <ColumnDefinition />
                 <ColumnDefinition />
                 <ColumnDefinition />
                 <ColumnDefinition />
@@ -23,17 +24,9 @@
             <Frame
                 Grid.Row="0"
                 Grid.Column="0"
-                Grid.ColumnSpan="10"
+                Grid.ColumnSpan="11"
                 Padding="0"
-                BackgroundColor="OrangeRed"
-                CornerRadius="0"
-                HasShadow="False" />
-            <Frame
-                Grid.Row="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="10"
-                Padding="0"
-                BackgroundColor="White"
+                BackgroundColor="#C05221"
                 CornerRadius="0"
                 HasShadow="False" />
             <Label
@@ -41,7 +34,7 @@
                 Grid.Column="0"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
                 Text="M"
                 TextColor="Black" />
@@ -50,7 +43,7 @@
                 Grid.Column="1"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
                 Text="WS"
                 TextColor="Black" />
@@ -59,7 +52,7 @@
                 Grid.Column="2"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
                 Text="BS"
                 TextColor="Black" />
@@ -68,7 +61,7 @@
                 Grid.Column="3"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
                 Text="S"
                 TextColor="Black" />
@@ -77,7 +70,7 @@
                 Grid.Column="4"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
                 Text="T"
                 TextColor="Black" />
@@ -86,7 +79,7 @@
                 Grid.Column="5"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
                 Text="W"
                 TextColor="Black" />
@@ -95,7 +88,7 @@
                 Grid.Column="6"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
                 Text="A"
                 TextColor="Black" />
@@ -104,7 +97,7 @@
                 Grid.Column="7"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
                 Text="Ld"
                 TextColor="Black" />
@@ -113,7 +106,7 @@
                 Grid.Column="8"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
                 Text="Sv"
                 TextColor="Black" />
@@ -122,101 +115,126 @@
                 Grid.Column="9"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
-                Text="Mx"
+                Text="Max"
                 TextColor="Black" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="10"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Small"
+                HorizontalTextAlignment="Center"
+                Text="Pts"
+                TextColor="Black" />
+            <Frame
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="11"
+                Padding="0"
+                BackgroundColor="White"
+                CornerRadius="0"
+                HasShadow="False" />
             <Label
                 Grid.Row="1"
                 Grid.Column="0"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
-                Text="5''"
+                Text="{Binding Path=Move}"
                 TextColor="Black" />
             <Label
                 Grid.Row="1"
                 Grid.Column="1"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
-                Text="3+"
+                Text="{Binding Path=WeaponSkill}"
                 TextColor="Black" />
             <Label
                 Grid.Row="1"
                 Grid.Column="2"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
-                Text="3+"
+                Text="{Binding Path=BallisticSkill}"
                 TextColor="Black" />
             <Label
                 Grid.Row="1"
                 Grid.Column="3"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
-                Text="4"
+                Text="{Binding Path=Strength}"
                 TextColor="Black" />
             <Label
                 Grid.Row="1"
                 Grid.Column="4"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
-                Text="4"
+                Text="{Binding Path=Toughness}"
                 TextColor="Black" />
             <Label
                 Grid.Row="1"
                 Grid.Column="5"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
-                Text="1"
+                Text="{Binding Path=Wounds}"
                 TextColor="Black" />
             <Label
                 Grid.Row="1"
                 Grid.Column="6"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
-                Text="1"
+                Text="{Binding Path=Attacks}"
                 TextColor="Black" />
             <Label
                 Grid.Row="1"
                 Grid.Column="7"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
-                Text="10"
+                Text="{Binding Path=Leadership}"
                 TextColor="Black" />
             <Label
                 Grid.Row="1"
                 Grid.Column="8"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
-                Text="3+"
+                Text="{Binding Path=Save}"
                 TextColor="Black" />
             <Label
                 Grid.Row="1"
                 Grid.Column="9"
                 Margin="0,5"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="Small"
                 HorizontalTextAlignment="Center"
-                Text="-"
+                Text="{Binding Path=MaxCount}"
                 TextColor="Black" />
-
+            <Label
+                Grid.Row="1"
+                Grid.Column="10"
+                Margin="0,5"
+                FontAttributes="Bold"
+                FontSize="Small"
+                HorizontalTextAlignment="Center"
+                Text="{Binding Path=Points}"
+                TextColor="Black" />
         </Grid>
     </ContentView.Content>
 </ContentView>

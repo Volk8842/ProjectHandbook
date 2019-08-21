@@ -1,0 +1,102 @@
+﻿<ContentView
+    x:Class="ProjectHandbook.Views.WeaponStatsView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentView.Resources>
+        <ResourceDictionary Source="../ResourceDictionaries/Templates.xaml" />
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Grid Margin="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Frame
+                Grid.Row="0"
+                Padding="0"
+                BackgroundColor="#777777"
+                CornerRadius="0"
+                HasShadow="False" />
+            <Grid Grid.Row="0" Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Column="0"
+                    Margin="5,5"
+                    FontAttributes="Bold"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Start"
+                    Text="WEAPON"
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+                <Label
+                    Grid.Column="1"
+                    Margin="0,5"
+                    FontAttributes="Bold"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    Text="RANGE"
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+                <Label
+                    Grid.Column="2"
+                    Margin="0,5"
+                    FontAttributes="Bold"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Start"
+                    Text="TYPE"
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+                <Label
+                    Grid.Column="3"
+                    Margin="0,5"
+                    FontAttributes="Bold"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    Text="S"
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+                <Label
+                    Grid.Column="4"
+                    Margin="0,5"
+                    FontAttributes="Bold"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    Text="AP"
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+                <Label
+                    Grid.Column="5"
+                    Margin="0,5"
+                    FontAttributes="Bold"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    Text="D"
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+                <Label
+                    Grid.Column="6"
+                    Margin="0,5"
+                    FontAttributes="Bold"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    Text="Pts"
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+            </Grid>
+            <ListView
+                Grid.Row="1"
+                HasUnevenRows="True"
+                ItemTemplate="{StaticResource WeaponTemplate}"
+                ItemsSource="{Binding Path=Weapons}"
+                SeparatorVisibility="None" />
+        </Grid>
+    </ContentView.Content>
+</ContentView>
