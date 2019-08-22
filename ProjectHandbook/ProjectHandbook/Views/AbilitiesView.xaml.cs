@@ -4,9 +4,9 @@ using Xamarin.Forms.Xaml;
 namespace ProjectHandbook.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WeaponStatsView : ContentView
+    public partial class AbilitiesView : ContentView
     {
-        public WeaponStatsView()
+        public AbilitiesView()
         {
             this.InitializeComponent();
         }

@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentView
+﻿<ContentView
     x:Class="ProjectHandbook.Views.UnitView"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -15,8 +14,6 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition />
                 </Grid.RowDefinitions>
                 <Frame
                     Grid.Row="0"
@@ -35,19 +32,59 @@
                     Grid.Row="2"
                     Margin="0"
                     Padding="1"
-                    BackgroundColor="Black"
+                    BackgroundColor="#222222"
                     HasShadow="False" />
-                <views:WeaponStatsView Grid.Row="3" BindingContext="{Binding Path=UnitModel}" />
-                <Frame
+                <ScrollView Orientation="Vertical" Grid.Row="3">
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <views:WeaponStatsView Grid.Row="0" BindingContext="{Binding Path=UnitModel}" />
+                        <Frame
+                            Grid.Row="1"
+                            Margin="0"
+                            Padding="1"
+                            BackgroundColor="#222222"
+                            CornerRadius="0"
+                            HasShadow="False" />
+                        <views:FactionKeywordView Grid.Row="2" BindingContext="{Binding Path=UnitModel}" />
+                        <Frame
+                            Grid.Row="3"
+                            Margin="0"
+                            Padding="1"
+                            BackgroundColor="#222222"
+                            CornerRadius="0"
+                            HasShadow="False" />
+                        <views:KeywordsView Grid.Row="4" BindingContext="{Binding Path=UnitModel}" />
+                    </Grid>
+                </ScrollView>
+                <!--<Frame
                     Grid.Row="4"
                     Margin="0"
                     Padding="1"
-                    BackgroundColor="Black"
+                    BackgroundColor="#777777"
                     HasShadow="False" />
+                <views:AbilitiesView Grid.Row="5" BindingContext="{Binding Path=UnitModel}" />
                 <Frame
-                    Grid.Row="5"
-                    BackgroundColor="White"
+                    Grid.Row="6"
+                    Margin="0"
+                    Padding="1"
+                    BackgroundColor="#777777"
+                    CornerRadius="0"
                     HasShadow="False" />
+                <views:PsykerView Grid.Row="7" BindingContext="{Binding Path=UnitModel}" />
+                <Frame
+                    Grid.Row="8"
+                    Margin="0"
+                    Padding="1"
+                    BackgroundColor="#777777"
+                    CornerRadius="0"
+                    HasShadow="False" />
+                <views:SpecialistsView Grid.Row="9" BindingContext="{Binding Path=UnitModel}" />-->
             </Grid>
         </Frame>
     </ContentView.Content>

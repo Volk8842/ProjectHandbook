@@ -133,7 +133,7 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="11"
                 Padding="0"
-                BackgroundColor="White"
+                BackgroundColor="#E8E8E7"
                 CornerRadius="0"
                 HasShadow="False" />
             <Label

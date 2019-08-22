@@ -1,8 +1,6 @@
 ﻿using Prism.Mvvm;
 
-using ProjectHandbook.Enums;
-
-namespace ProjectHandbook
+namespace ProjectHandbook.Models
 {
     public class WeaponModel : BindableBase
     {

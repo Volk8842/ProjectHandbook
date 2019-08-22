@@ -1,4 +1,4 @@
-﻿namespace ProjectHandbook
+﻿namespace ProjectHandbook.Models
 {
     public class UnitStatsModel
     {

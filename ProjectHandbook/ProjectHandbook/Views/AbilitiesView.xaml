@@ -1,11 +1,8 @@
-﻿<ContentView
-    x:Class="ProjectHandbook.Views.WeaponStatsView"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <ContentView.Resources>
-        <ResourceDictionary Source="../ResourceDictionaries/Templates.xaml" />
-    </ContentView.Resources>
-    <ContentView.Content>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectHandbook.Views.AbilitiesView">
+  <ContentView.Content>
         <Grid Margin="0" RowSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -91,16 +88,12 @@
                     TextColor="Black"
                     VerticalTextAlignment="Center" />
             </Grid>
-            <StackLayout
+            <ListView
                 Grid.Row="1"
-                VerticalOptions="Fill"
-                Orientation="Vertical">
-                <ListView
-                    HasUnevenRows="True"
-                    ItemTemplate="{StaticResource WeaponTemplate}"
-                    ItemsSource="{Binding Path=Weapons}"
-                    SeparatorVisibility="None" />
-            </StackLayout>
+                HasUnevenRows="True"
+                ItemTemplate="{StaticResource WeaponTemplate}"
+                ItemsSource="{Binding Path=Weapons}"
+                SeparatorVisibility="None" />
         </Grid>
-    </ContentView.Content>
+  </ContentView.Content>
 </ContentView>

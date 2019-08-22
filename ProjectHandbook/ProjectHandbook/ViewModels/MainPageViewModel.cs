@@ -1,5 +1,7 @@
 ﻿using Prism.Navigation;
 
+using ProjectHandbook.Models;
+
 namespace ProjectHandbook.ViewModels
 {
     public class MainPageViewModel : ViewModelBase

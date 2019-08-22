@@ -6,7 +6,7 @@
     x:Class="ProjectHandbook.Views.MainPage"
     Title="{Binding Title}">
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
         <views:UnitView Margin="10" />
     </StackLayout>
 
