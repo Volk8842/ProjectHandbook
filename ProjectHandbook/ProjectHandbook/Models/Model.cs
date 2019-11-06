@@ -1,7 +1,11 @@
 ﻿namespace ProjectHandbook.Models
 {
-    public class UnitStatsModel
+    public class Model
     {
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
         public string Move { get; set; }
 
         public string WeaponSkill { get; set; }
@@ -20,8 +24,6 @@
 
         public string Save { get; set; }
 
-        public string MaxCount { get; set; }
-
-        public int Points { get; set; }
+        public int PtsCost { get; set; }
     }
 }

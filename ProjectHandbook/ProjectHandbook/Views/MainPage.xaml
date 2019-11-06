@@ -2,12 +2,10 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:views="clr-namespace:ProjectHandbook.Views;assembly=ProjectHandbook"
     x:Class="ProjectHandbook.Views.MainPage"
     Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
-        <views:UnitView Margin="10" />
     </StackLayout>
 
 </ContentPage>

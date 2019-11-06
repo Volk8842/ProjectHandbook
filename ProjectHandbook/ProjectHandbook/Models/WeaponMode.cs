@@ -1,8 +1,6 @@
-﻿using Prism.Mvvm;
-
-namespace ProjectHandbook.Models
+﻿namespace ProjectHandbook.Models
 {
-    public class WeaponModel : BindableBase
+    public class WeaponMode
     {
         public string Name { get; set; }
 
@@ -10,16 +8,12 @@ namespace ProjectHandbook.Models
 
         public string Type { get; set; }
 
-        // public int ShotsCount { get; set; }
-
         public string Strength { get; set; }
 
         public string ArmorPenetration { get; set; }
 
         public string Damage { get; set; }
 
-        public string Abilities { get; set; }
-
-        public int Points { get; set; }
+        public string Ability { get; set; }
     }
 }
